@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+{% for place in places %}
+    {{ place.name }}<br>
+    {{ place.description}}<br>
+
+{% endfor %}
+<br>
+
+{% endblock %}
